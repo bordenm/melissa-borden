@@ -1,12 +1,11 @@
 :root {
-  --vapor-pink: #ff71ce;
+  --vapor-purple: #c77dff;
   --vapor-cyan: #01cdfe;
-  --vapor-purple: #b967ff;
   --vapor-yellow: #fffb96;
   --space-deep: #0a0014;
   --space-mid: #1a0033;
   --space-edge: #2d1b4e;
-  --orbit-line: rgba(255, 113, 206, 0.22);
+  --orbit-line: rgba(199, 125, 255, 0.22);
   --heart-gray: #d4d0db;
 }
 
@@ -38,7 +37,7 @@ body::before {
   inset: 0;
   background-image:
     radial-gradient(1px 1px at 25px 30px, #fff, transparent),
-    radial-gradient(1px 1px at 80px 90px, var(--vapor-pink), transparent),
+    radial-gradient(1px 1px at 80px 90px, var(--vapor-purple), transparent),
     radial-gradient(1px 1px at 130px 40px, var(--vapor-cyan), transparent),
     radial-gradient(2px 2px at 200px 150px, #fff, transparent),
     radial-gradient(1px 1px at 50px 200px, #fff, transparent),
@@ -60,8 +59,8 @@ body::after {
   right: -50%;
   height: 50vh;
   background-image:
-    linear-gradient(var(--vapor-pink) 1px, transparent 1px),
-    linear-gradient(90deg, var(--vapor-pink) 1px, transparent 1px);
+    linear-gradient(var(--vapor-purple) 1px, transparent 1px),
+    linear-gradient(90deg, var(--vapor-purple) 1px, transparent 1px);
   background-size: 40px 40px;
   transform: perspective(300px) rotateX(60deg);
   transform-origin: 50% 0;
@@ -106,7 +105,7 @@ body::after {
   image-rendering: pixelated;
 }
 
-.planet-1 { filter: drop-shadow(0 0 6px var(--vapor-pink)); }
+.planet-1 { filter: drop-shadow(0 0 6px var(--vapor-purple)); }
 .planet-2 { filter: drop-shadow(0 0 6px var(--vapor-cyan)); }
 .planet-3 { filter: drop-shadow(0 0 6px var(--vapor-yellow)); width: 24px; height: 24px; }
 
@@ -132,9 +131,9 @@ h1 {
   letter-spacing: 2px;
   line-height: 1.5;
   text-shadow:
-    3px 0 var(--vapor-pink),
+    3px 0 var(--vapor-purple),
     -3px 0 var(--vapor-cyan),
-    0 0 24px rgba(255, 113, 206, 0.5);
+    0 0 24px rgba(199, 125, 255, 0.5);
 }
 
 p {
@@ -150,7 +149,7 @@ p {
   color: var(--heart-gray);
   display: inline-block;
   animation: beat 1.4s ease-in-out infinite;
-  text-shadow: 0 0 8px rgba(255, 113, 206, 0.6);
+  text-shadow: 0 0 8px rgba(199, 125, 255, 0.6);
 }
 
 @keyframes beat {
