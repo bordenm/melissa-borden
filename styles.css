@@ -6,7 +6,6 @@
   --space-mid: #1a0033;
   --space-edge: #2d1b4e;
   --orbit-line: rgba(199, 125, 255, 0.22);
-  --heart-gray: #d4d0db;
 }
 
 * { box-sizing: border-box; }
@@ -165,18 +164,6 @@ p {
   text-shadow: 0 0 12px rgba(1, 205, 254, 0.7);
 }
 
-.heart {
-  color: var(--heart-gray);
-  display: inline-block;
-  animation: beat 1.4s ease-in-out infinite;
-  text-shadow: 0 0 8px rgba(199, 125, 255, 0.6);
-}
-
-@keyframes beat {
-  0%, 100% { transform: scale(1); }
-  50% { transform: scale(1.2); }
-}
-
 @media (prefers-reduced-motion: reduce) {
-  .orbit, .heart, .planet { animation: none; }
+  .orbit, .planet { animation: none; }
 }
